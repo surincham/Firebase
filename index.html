@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Train Schedule</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Anytime is Train Time</h1>
+        <p class="lead">Choo Choo. Chee Chee.</p>
+    </div>
+    <br>
+    <div class="card mx-auto">
+        <div class="schedule">
+            <div class="card-header">Current Train Schedule</div>
+            <div class="card-body sTable">
+                <thread>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="card mx-auto">
+        <div class="newTrain">
+            <div class="card-header">Add Train</div>
+            <div class="card-body addTrain">
+            <form>
+                <div class="form-group">
+                    <label for="trainName">Train Name</label>
+                    <input class="form-control" id="tName" aria-describedby="name">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input class="form-control" id="dName" aria-describedby="where">
+                </div>
+                <div class="form-group">
+                    <label for="firstTrain">First Train Time (HH:mm - military time)</label>
+                    <input class="form-control" id="tTime" aria-describedby="time">
+                </div>
+                <div class="form-group">
+                    <label for="frequency">Frequency</label>
+                    <input class="form-control" id="fTime" aria-describedby="fTime">
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
